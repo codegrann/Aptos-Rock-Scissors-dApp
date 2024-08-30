@@ -7,6 +7,7 @@ import { NetworkInfo } from "@/components/NetworkInfo";
 import { AccountInfo } from "@/components/AccountInfo";
 import { TransferAPT } from "@/components/TransferAPT";
 import { MessageBoard } from "@/components/MessageBoard";
+import  RockPaperScissors from "@/components/RockPaperScissors";
 
 function App() {
   const { connected } = useWallet();
@@ -18,12 +19,13 @@ function App() {
         {connected ? (
           <Card>
             <CardContent className="flex flex-col gap-10 pt-6">
-              <WalletDetails />
+              {/* <WalletDetails /> */}
              {/* <NetworkInfo />*/}
               {/* <AccountInfo /> */}
               <TransferAPT />
-              <MessageBoard />
+              {/* <MessageBoard /> */}
             </CardContent>
+            <RockPaperScissors />
           </Card>
         ) : (
           <CardHeader>
